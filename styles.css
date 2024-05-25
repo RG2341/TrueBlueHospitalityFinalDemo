@@ -1,0 +1,9 @@
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("SIX_56D15275-9A5C-4372-9D61-8F84FB0D72B1.JPG");
+    min-height: 100vh;
+    filter: none; /* Remove any filters applied to the image */
+  }
+  

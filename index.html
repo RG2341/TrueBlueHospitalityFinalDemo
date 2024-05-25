@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>True Blue Hospitality</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Raleway", sans-serif;
+  }
+
+  body, html {
+    height: 100%;
+    line-height: 1.8;
+  }
+
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+  }
+
+  .centered-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .centered-text span {
+    font-size: 24px;
+    font-family: 'GoudyTrajan-Regular', sans-serif;
+    color: #000;
+  }
+
+  .true-blue {
+    font-family: 'Roundhand-Bold', sans-serif;
+    color: #0074cc;
+  }
+
+  .logo-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  @font-face {
+    font-family: 'GoudyTrajan-Regular';
+    src: url('GoudyTrajan-Regular.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Roundhand-Bold';
+    src: url('Roundhand-Bold.ttf') format('truetype');
+  }
+
+  .w3-bar .w3-button {
+    color: #0074cc !important;
+  }
+
+  footer {
+    background-color: #0074cc !important;
+    color: rgb(18, 72, 180) !important;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+    height: 60vh;
+  }
+
+  .mySlides {
+    display: none;
+    height: 100%;
+  }
+
+  .mySlides img {
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+    object-fit: cover;
+  }
+  .bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(TBHFINALFINAL.JPG);
+  height: 70vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Ensure text is centered */
+  filter: none;
+}
+
+@media (max-width: 600px) {
+  .bgimg-1 {
+    height: 40vh; /* Adjust height for smaller screens if needed */
+  }
+
+  .centered-text span {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+}
+
+
+  .shadow-box {
+    box-shadow: 0 -8px 16px rgba(2, 0, 0, 0.0);
+    padding: 16px;
+    background-color: #ffffff;
+  }
+
+  .centered-title .w3-bottombar {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .centered-title {
+  text-align: center;
+  box-shadow: 0px 8px 16px rgba(2, 0, 0, .0); /* Drop shadow on top */
+}
+
+ul li a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits color from parent */
+}
+
+ul {
+    text-align: left; /* Aligns the list items to the left */
+
+}
+.w3-left-align {
+  text-align: left !important;
+}
+
+.blue-box-button {
+  border: 2px solid #0074cc; /* Blue border */
+  padding: 8px 16px; /* Padding for the button */
+  background-color: white; /* White background */
+  color: #0074cc; /* Blue text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.blue-box-button:hover {
+  background-color: #0074cc; /* Blue background on hover */
+  color: white; /* White text on hover */
+}
+
+.logo-image {
+  max-height: 60px; /* Adjust the max height as needed */
+}
+
+/* Remove conflicting styles */
+.centered-title {
+  box-shadow: none; /* Remove box-shadow */
+}
+
+/* Adjust alignment of menu options */
+.w3-right.w3-hide-small {
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  align-items: flex-end; /* Align to the bottom */
+}
+
+/* Add margin to the logo-container */
+.logo-container {
+  margin-bottom: 20px; /* Add margin to separate from menu options */
+}
+/* Remove filter from images inside w3-card */
+.w3-card img {
+  filter: none !important;
+}
+
+.padding-reduced {
+    padding: 64px 8px; /* Adjust these values as needed */
+}
+
+#welcome-heading,
+  #services-heading {
+    font-size: 32px;
+  }
+</style>
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">
+      <img src="TBLogo.png" alt="LOGO" class="logo-image">
+    </a>    
+    <div class="w3-right w3-hide-small" style="flex: 1; display: flex; justify-content: center; align-items: flex-end;">
+      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"></i>HOME</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-users" aria-hidden="true"></i> TEAM</a>
+      <a href="#services" class="w3-bar-item w3-button"><i class="fa fa-handshake-o" aria-hidden="true"></i> SERVICES</a>
+      <a href="#projects" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PROPERTIES</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    </a>
+  </div>
+</div>
+
+
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <img src="TBHMain.JPG" alt="Image 1">
+</header>
+
+<div class="w3-container w3-light-grey shadow-box" style="padding:5px 10px !important;" id="services">
+<div class="w3-container w3-light-grey shadow-box" style="padding:50px 16px;" id="services">
+  <div class="w3-padding-16"><span class="w3-xlarge w3-border-blue w3-bottombar">Our Services</span></div>
+  <h3>Click to learn more about any service.</h3>
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <ul> 
+        <li><a href="PreOpen.html">Pre-Opening Assistance</a></li>
+        <li><a href="BBInn.html">Bed & Breakfast Inns and Boutique Inns</a></li>
+        <li><a href="Condo.html">Condo-Hotel Management</a></li>
+        <li><a href="FullHotel.html">Full Service Hotel Management</a></li>
+        <li><a href="Rental.html">Rental Property Management</a></li>
+        <li><a href="Consulting.html">Consulting Services</a></li>
+        <li><a href="Receive.html">Receivership Services</a></li>
+    </ul>   
+
+      <p><a href="#projects" class="w3-button w3-black centered-title"><i class="fa fa-th"> </i> View Our Properties & Clients</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="APBed.jpeg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-container" style="padding:20px 16px" id="team">
+  <div class="w3-padding-16 centered-title"><span class="w3-xlarge w3-border-blue w3-bottombar">About Us</span></div>
+  <p style="text-align:center;">Our mission is to provide exceptional hospitality services with integrity and innovation, focusing on achieving excellence for our owners, investors, and clients. Through hands-on management, we aim to delight guests, empower employees, and maximize investment value.</p>
+  <p class="w3-center w3-large">Meet Our True Blue Team:</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+<img src="DKalik.jpeg" style="width:100%; filter: none;">
+
+        <div class="w3-container">
+          <h3>David Kalik</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Mr. Kalik has more than forty years experience in the hospitality industry in various capacities. Mr. Kalik focuses his skills on revenue generation, expense controls, guest satisfaction, human resources techniques, capital planning and long term vision plans for all properties he manages. He is an actively involved operator, constantly communicating to and directing the managers of his properties to strive to be the best hoteliers and restaurateurs they can be.</p>
+          <button class="w3-button w3-light-grey w3-block" onclick="window.location.href='mailto:dkalik@tbhospitality.com';"><i class="fa fa-envelope"></i> Contact</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="BCreasy.jpeg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Ben Creasy</h3>
+          <p class="w3-opacity">Director of Operations</p>
+          <p>Experienced hotelier with success in the hospitality industry, Mr. Creasy currently manages four hotels and seven commercial/residential properties. He presents keen skills in P&L management, sales, customer/tenant satisfaction, and operational technologies. He takes pride in running exemplary day to day operations, and consistently exceeds the expectations of guests and owners alike. He fosters a superior culture where team members want to work. Mr. Creasy drives growth for all properties under his management.</p>
+          <button class="w3-button w3-light-grey w3-block" onclick="window.location.href='mailto:bcreasy@tbhospitality.com';"><i class="fa fa-envelope"></i> Contact</button>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Final DJ 2.JPG" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>DJ Gajjar</h3>
+          <p class="w3-opacity">Director of Capital Projects</p>
+          <p>Mr. Gajjar has over twenty-four years of experience in ownership, management, and hotel operations. He excels in overseeing brand standard implementation, renovations and its budgeting, and the integration of advanced technology in hotels. In addition to his technical and operational expertise, Mr. Gajjar places an emphasis on positive employee relations, understanding that a motivated and supported team is crucial to delivering exceptional guest experiences.</p>
+          <button class="w3-button w3-light-grey w3-block" onclick="window.location.href='mailto:dj@tbhospitality.com';"><i class="fa fa-envelope"></i> Contact</button>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="IMG_0780.JPG" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Amy Houchins</h3>
+          <p class="w3-opacity">Director of Sales</p>
+          <p>Born and bred in Charleston, SC, Mrs. Houchins brings a lifetime of hospitality expertise to every endeavor. Her early days were spent exploring the cobblestone streets and taking in the city's rich history. Mrs. Houchins has a proven track record of increasing revenue through innovative marketing strategies and operational excellence. With a commitment to maximizing profitability, Mrs. Houchins looks forward to leveraging her expertise to boost the financial success of every property she manages.</p>
+          <button class="w3-button w3-light-grey w3-block" onclick="window.location.href='mailto:sales@tbhospitality.com';"><i class="fa fa-envelope"></i> Contact</button>
+        </div>
+      </div>
+    </div>    
+  </div>
+</div>
+<!-- Project Section -->
+<div class="w3-padding-16 centered-title" id="projects">
+  <div class="w3-padding-16 centered-title"><span class="w3-xlarge w3-border-blue w3-bottombar"> Our Properties and Consulting Clients</span></div>
+  <p class="w3-center w3-large">Located across the Carolinas</p>
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <a href="https://www.ihg.com/holidayinnexpress/hotels/us/en/summerville/chssm/hoteldetail">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-blue w3-padding">Holiday Inn Express; Summerville, SC</div>
+        <img src="HolidayInnSummerville.jpeg" alt="suMMERVILLE" style="width:99%">
+      </div>
+    </a>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <a href="https://www.choicehotels.com/south-carolina/charleston/comfort-suites-hotels/sc369">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-blue w3-padding">Comfort Suites; West Ashley, SC</div>
+        <img src="Comfort.webp" alt="House" style="width:99%">
+      </div>
+    </a>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <a href="https://www.ihg.com/holidayinnexpress/hotels/us/en/mount-pleasant/chsmt/hoteldetail">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-blue w3-padding">Holiday Inn Express; Mt. Pleasant, SC</div>
+        <img src="HSUM.jpeg" alt="House" style="width:99%">
+      </div>
+    </a>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <a href="https://www.wyndhamhotels.com/wyndham-garden/summerville-south-carolina/wyndham-garden-summerville/overview?iata=00093763&cid=PS:zoiju74ux7kof2l&gad_source=1&gclid=CjwKCAjwo6GyBhBwEiwAzQTmczF_qx0FHpkRN17xsYGZYehYCuLN442YP4kIKqb2WHnCHaEJNX06hRoCgT0QAvD_BwE&gclsrc=aw.ds">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-blue w3-padding">Wyndham Garden Inn; Summerville, SC</div>
+        <img src="wyndham.avif" alt="House" style="width:100%">
+      </div>
+    </a>
+  </div>
+</div>
+<div class="w3-row-padding">
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <a href="https://www.andrewpinckneyinn.com/?gad_source=1&gclid=CjwKCAjwo6GyBhBwEiwAzQTmc9MP7RW4FjS3_2Pq38VPrml9IvJqNMvUoIkdp_GxdRDWCl7WB1NScBoCUBcQAvD_BwE">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-blue w3-padding">Andrew Pinckney Inn; Charleston, SC</div>
+        <img src="APinn.jpeg" alt="House" style="width:100%">
+      </div>
+    </a>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <a href="https://charlestoncreeksideinn.com">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-blue w3-padding"> Charleston Creekside Inn; West Ashley, SC</div>
+        <img src="CreekSide.jpeg" alt="House" style="width:100%">
+      </div>
+    </a>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <a href="https://www.hilton.com/en/hotels/ilmsphx-hampton-suites-southport/">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-blue w3-padding">Hampton Inn & Suites; Southport, NC</div>
+        <img src="Hampton.avif" alt="House" style="width:99%">
+      </div>
+    </a>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <a href="https://www.marriott.com/en-us/hotels/ilmfs-fairfield-inn-and-suites-southport/overview/?gclid=CjwKCAjwo6GyBhBwEiwAzQTmc8wzc_sOFH01A8uthkzs-7txR2RgQGR794TYbjXdak5kv9dIGk6y2RoCWOcQAvD_BwE&gclsrc=aw.ds&cid=PAI_GLB0004YXD_GLE000BIM5_GLF000OETA">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-blue w3-padding">Fairfield Inn & Suites; Southport, NC</div>
+        <img src="Ffinn.jpeg" alt="House" style="width:100%">
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="w3-padding-16 centered-title" id="projects">
+  <div class="w3-padding-16 centered-title"><span class="w3-xlarge w3-border-blue w3-bottombar"> Previous Properties and Consulting Clients</span></div>
+</div>
+<div class="w3-row-padding">
+  <div class="w3-col l4 m6 w3-margin-bottom">
+    <a href="https://www.seasideinniop.com">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-blue w3-padding">Seaside Inn; Isle of Palms, SC</div>
+        <img src="IOPSSN.jpeg" alt="House" style="width:100%">
+      </div>
+    </a>
+  </div>
+  <div class="w3-col l4 m6 w3-margin-bottom">
+    <a href="https://www.cambriafortmill.com/?gad_source=1&gclid=Cj0KCQjwgJyyBhCGARIsAK8LVLOCM-ndRFBlbDBPErlc2lPUxPJdPgeIlfh58gJEA4TxJsGOXnDCvdMaAglDEALw_wcB">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-blue w3-padding">Cambria Hotel; Fort Mill, SC</div>
+        <img src="CambriaFM.jpeg" alt="House" style="width:100%">
+      </div>
+    </a>
+  </div>
+  <div class="w3-col l4 m6 w3-margin-bottom">
+    <a href="https://www.thevillageinnsofblowingrock.com">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-blue w3-padding">Village Inns of Blowing Rock, NC</div>
+        <img src="7876_Valley_Blvd_Blowing_Rock-large-261-165-The_Inn110-1500x1000-72dpi.jpg" alt="House" style="width:100%">
+      </div>
+    </a>
+  </div>
+</div>
+<div class="w3-row-padding w3-center">
+  <div class="w3-col l2 m0">&nbsp;</div>
+  <div class="w3-col l4 m6 w3-margin-bottom">
+    <a href="https://www.middleburyinn.com">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-blue w3-padding">Middlebury Inn, VT</div>
+        <img src="MVT.jpeg" alt="House" style="width:100%">
+      </div>
+    </a>
+  </div>
+  <div class="w3-col l4 m6 w3-margin-bottom">
+    <a href="https://www.berkeleyhotel.com">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-blue w3-padding">The Berkley Hotel; Richmond, VA</div>
+        <img src="TheBerkeleyHotel-1132020-58-v2_1b94caad-5056-a36a-07cf777d0e009579.jpg" alt="House" style="width:100%">
+      </div>
+    </a>
+  </div>
+  <div class="w3-col l2 m0">&nbsp;</div>
+</div>
+
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+      <div class="w3-padding-16"><span class="w3-xlarge w3-border-blue w3-bottombar">Contact Us</span></div>
+      <h3>Let's get in touch about your needs.</h3>
+      <p><i class="fa fa-map-marker w3-text-blue w3-xlarge"></i>  Charleston, SC</p>
+      <p><i class="fa fa-phone w3-text-blue w3-xlarge"></i>  843-763-3432</p>
+      <p><i class="fa fa-envelope-o w3-text-blue w3-xlarge"></i>  P.O. Box 80447</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="https://formspree.io/f/mgegqgwq" method="POST">
+        <div class="w3-section">      
+          <label>Name</label>
+          <input class="w3-input" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">      
+          <label>Email</label>
+          <input class="w3-input" type="email" name="Email" required>
+        </div>
+        <div class="w3-section">      
+          <label>Inquiring About</label>
+          <select class="w3-input" name="Service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="Pre-Opening Assistance">Pre-Opening Assistance</option>
+            <option value="Bed & Breakfast Inns and Boutique Inns">Bed & Breakfast Inns and Boutique Inns</option>
+            <option value="Condo-Hotel Management">Condo-Hotel Management</option>
+            <option value="Full Service Hotel Management">Full Service Hotel Management</option>
+            <option value="Rental Property Management">Rental Property Management</option>
+            <option value="Consulting Services">Consulting Services</option>
+            <option value="Receivership Services">Receivership Services</option>
+          </select>
+        </div>
+        <div class="w3-section">      
+          <label>Message</label>
+          <input class="w3-input" type="text" name="Message" required>
+        </div>  
+      
+        <!-- Hidden input field for the redirect URL -->
+        <input type="hidden" name="_next" value="https://rg2341.github.io/TrueBlueHospitality/thankyou.html">
+      
+        <button type="submit" class="blue-box-button">Send</button>      
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off" style=" width: 1000;">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.linkedin.com/company/true-blue-hospitality/" target="_blank" class="w3-hover-opacity">
+      <i class="fa fa-linkedin"></i>
+  </a>  
+  </div>
+  <p>&copy; True Blue Hospitality</a></p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+}
+
+// Function to handle scroll event
+function handleScroll() {
+  const slideElements = document.querySelectorAll('.slide-in');
+
+  slideElements.forEach(element => {
+    const rect = element.getBoundingClientRect();
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    const isInView = rect.top >= 0 && rect.bottom <= viewportHeight;
+    
+    if (isInView) {
+      element.classList.add('visible');
+    } else {
+      element.classList.remove('visible');
+    }
+  });
+}
+
+// Attach scroll event listener to the window
+window.addEventListener('scroll', handleScroll);
+
+// Initially trigger the handleScroll function to check if elements are in the viewport on page load
+window.addEventListener('load', handleScroll);
+
+</script>
+</body>
+</html>
